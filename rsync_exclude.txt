@@ -1,0 +1,13 @@
+# Directories
+.git/
+
+# cache
+.gitignore
+*.py[cod]
+
+local_config.py
+local_api_config.py
+Static_Full_Version
+
+/.git/*
+.idea/
