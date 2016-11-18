@@ -20,4 +20,4 @@ else:
         print 'in Darwin......'
         print connect(MONGO_CONFIG['db'], host=MONGO_CONFIG['host'], port=MONGO_CONFIG['port'])
     else:
-        connect('bitbread', host='dds-bp1156dc1fedf0b42.mongodb.rds.aliyuncs.com', port=3717, username='anydata', password='anydata123456')
+        connect('bitbread', host='localhost', port=27017)
