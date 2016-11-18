@@ -6,10 +6,7 @@ import uuid
 
 class Config(object):
 
-    DEBUG = True
-
-    # HOST = '106.14.31.54'
-    # PORT = 8848
+    DEBUG = False
 
     SECRET_KEY = 'qwd7qwd23qw2j1wddwdqwd21qwwdn87127-'
 

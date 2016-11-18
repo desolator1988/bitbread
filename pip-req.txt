@@ -49,3 +49,11 @@ blinker
 xlwt
 jpush
 wechat_sdk
+Flask-Bcrypt
+Flask-HTTPAuth
+Flask-RESTful
+Flask-WTF
+MarkupSafe
+Flask-MongoEngine
+Flask-Script
+WTForms

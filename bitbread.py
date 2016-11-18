@@ -24,5 +24,14 @@ def create_app():
 app = create_app()
 
 
+@app.before_request
+def before_request():
+    pass
+
+
+@app.after_request
+def after_request(response=None):
+    return response
+
 if __name__ == '__main__':
     app.run(host='localhost', port=8848)
