@@ -6,7 +6,6 @@ from common.config import (
     unittest_env,
     MONGO_CONFIG_STAGING as staging_config,
 )
-from common.local_config import MONGO_CONFIG
 
 
 if unittest_env:
@@ -17,6 +16,7 @@ if unittest_env:
 else:
     import platform
     if 'Darwin' in platform.uname():
+        from common.local_config import MONGO_CONFIG
         print 'in Darwin......'
         print connect(MONGO_CONFIG['db'], host=MONGO_CONFIG['host'], port=MONGO_CONFIG['port'])
     else:

@@ -26,7 +26,7 @@ class ProductionConfig(Config):
 
 
 class DevelopmentConfig(Config):
-    HOST = 'localhost'
+    pass
 
 
 def load_config():
