@@ -1,17 +1,19 @@
 <html>
-<head>
-
+  <head>
+    <title>${title if title else 'Hi'} - 朋友</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="/static/css/welcome.css">
 </head>
 <body>
-<p>this is index page...</p>
-<div>
-    ${table(test_bitbread)}
-</div>
-
-<%def name="table(test_bitbread)">
-    <p>
-        ${test_bitbread.name}
-    </p>
-</%def>
+<div id="wrapper">
+  <div id="info">
+    <div id="info-content">
+      <h1>
+          <a style="text-decoration:none; color: white" href="${url_for('index.home_view')}">Welcome!</a>
+      </h1>
+      <p>想要屹立不倒, 必须冷静思考.</p>
+    </div>
+  </div>
+</div><!-- #wrapper -->
 </body>
 </html>
